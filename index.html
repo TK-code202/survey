@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="img/logo.jpg">
+    <title>Flight Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content bg-light">
+            <form id="formOne">
+                <div class="heading d-flex  ">
+                    <img src="img/logo.jpg" alt="logo">
+                    <h2 class="mt-2">✈ FEOD ONLINE SURVEY</h2>
+                </div>
+                <h4>Ensure you answer all fields.</h4>
+                <div>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" class="form-control" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middle-name">Middle Name</label>
+                        <input id="middle-name" class="form-control" type="text" >
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" class="form-control" type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    Gender:
+                    <div>
+                        <input type="radio"  name="Gender" value="Male" >
+                        <label for="Male">Male</label>  
+                    </div>
+                    <input type="radio" name="Gender"  value="Female" >
+                    <label for="Female">Female</label>
+                </div>
+                <div class="form-group">
+                    <label for="tel-number">Mobile Number</label>
+                    <input id="tel-number" class="form-control" type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="color">What is your favourite colour?</label>
+                    <input id="color" class="form-control" type="color" >
+                </div>
+                <div class="form-group">
+                    <label for="food">What is your favourite food?</label>
+                    <input id="food" class="form-control" type="text" >
+                </div>
+                <div class="form-group">
+                    Have you ever used our airline?
+                    <label for="Yes">Yes</label>
+                    <input type="radio"  name="use" value="Yes" >
+                
+                    <label for="No">No</label>
+                    <input type="radio" name="use"  value="No" >
+                </div>
+                <div class="form-group">
+                    <label for="plane-use">If you use our airline, how regularly do you use it?</label>
+                <select name="plane-use" id="plane-use">
+                    <option value="">Select Regularity</option>
+                    <option value="Frequently">Frequently</option>
+                    <option value="Seldomly">Seldomly</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="plane-service">If you've been on our plane, how was the experience?</label>
+                <select name="plane-service" id="plane-service">
+                    <option value="">Select Experience</option>
+                    <option value="Excellent">It was excellent.</option>
+                    <option value="Good">It was good.</option>
+                    <option value="Average">It was average.</option>
+                    <option value="Bad">It was bad.</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Would you care to describe the experience?</label>
+                    <div>
+                    <textarea name="experience" id="experience" cols="40" rows="5"></textarea>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label for="experience">Do you have any suggestions on how you think the quality of our service can be improved?</label>
+                    <div>
+                    <textarea name="experience" id="experience" cols="40" rows="5"></textarea>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    Would you use our airline again?
+                    <div>
+                        <div>
+                            <input type="radio"  name="next-use" value="Yes">
+                            <label for="Yes">Yes, I would.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="next-use"  value="No" >
+                            <label for="No">No.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="next-use"  value="I might, if improved." >
+                            <label for="tentative">Yes, if the service is improved.</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+
+        <div id="summary">
+            <div class="contain">
+                <div class="heading d-flex">
+                    <img src="img/logo.jpg" alt="logo">
+                    <h1 class="text-center text-info mt-1">Survey Summary</h1>
+                </div>
+                <ul>
+                    <li>Name: <span class="name1"></span> <span class="name2"></span></li>
+                    <li>Gender: <span class="gender"></span></li>
+                    <li>Email: <span class="email"></span></li>
+                    <li>Favourite Color: <span class="fColor"></span></li>
+                    <li>Airline-use-regularity: <span class="use-regularity"></span></li>
+                    <li>Airline Experience: <span class="
+                        use-experience"></span></li>
+                    <li>Use our airline again: <span class="use-again"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
