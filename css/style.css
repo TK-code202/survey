@@ -18,6 +18,15 @@ body {
     margin-left: 15rem;
 }
 
+#summary {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    background-color: beige;
+    width: 55%;
+    padding: 10px;
+}
+
 #summary li {
     list-style-type: none;
     font-size:24px;
@@ -28,17 +37,7 @@ span {
     color: white;
 }
 
-#summary {
-    display: none;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    background-color: beige;
-    width: 55%;
-    padding: 10px;
-}
-
 .contain {
     padding: 10px;
-    /* height: 28rem; */
     background-color: rgb(206, 230, 166);
 }
