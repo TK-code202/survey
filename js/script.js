@@ -1,3 +1,4 @@
+//User Interface Logic
 $(document).ready(function() {
     $("#formOne").submit(function (event){
 
@@ -10,7 +11,7 @@ $(document).ready(function() {
         const genderInput = $("input:radio[name=Gender]:checked").val();
         const nextUseInput = $("input:radio[name=next-use]:checked").val();
         
-
+        //Insert input values into summary
         $(".name1").text(firstNameInput);
         $(".name2").text(lastNameInput);
         $(".email").text(emailInput);
@@ -20,7 +21,7 @@ $(document).ready(function() {
         $(".use-experience").text(planeServiceInput);
         $(".use-again").text(nextUseInput);
 
-
+        //View Survey Summary
         $("#summary").show();
         $(".content").hide();
         
