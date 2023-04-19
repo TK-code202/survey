@@ -1,0 +1,44 @@
+body {
+    background-image: url(pexels-lukas-669615.jpg);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading img {
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+}
+
+.content {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: 15rem;
+}
+
+#summary li {
+    list-style-type: none;
+    font-size:24px;
+}
+
+span {
+    font-weight: 800;
+    color: white;
+}
+
+#summary {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    background-color: beige;
+    width: 55%;
+    padding: 10px;
+}
+
+.contain {
+    padding: 10px;
+    /* height: 28rem; */
+    background-color: rgb(206, 230, 166);
+}
